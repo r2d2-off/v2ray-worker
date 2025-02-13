@@ -17,8 +17,8 @@ jobs:
         node-version: "latest"
         cache: "npm"
 
-    - name: Install modules
-      run: npm i wrangler@latest
+  - name: Install Wrangler
+      run: npm install -g wrangler
 
     - name: Build
       run: npx wrangler build
